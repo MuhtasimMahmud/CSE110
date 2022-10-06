@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Task_19 //eta math.pow die kora
+{
+  pulic static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Please give me a number");
+    int num=sc.nextInt();
+    int x=(Math.pow(10,num));
+    System.out.println(x);
+  }
+}

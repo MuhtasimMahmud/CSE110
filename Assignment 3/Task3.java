@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Task3
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Please give me height");
+    int height=sc.nextInt();
+    System.out.println("Plase give me width");
+    int width=sc.nextInt();
+    int area=height*width;
+    System.out.println("Area ="+ area);
+    sc.close();
+  }
+}

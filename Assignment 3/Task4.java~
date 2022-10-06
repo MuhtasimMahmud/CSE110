@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Task4
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Please give me an age");
+    int age=sc.nextIn();
+    if(age>18)
+    {
+      System.out.println("Please give me an ammount");
+      int ammount=sc.nextInt();
+      if(ammount>=10000)
+      {
+        if(ammount>=10000 && ammount<=20000)
+        {
+          System.out.println("You have to give 500 to 1000tk for tax");
+        }
+        else if(ammount>20000)
+        {
+          System.out.println("You have to give 2000tk for tax");
+        }
+      }
+      else
+      {
+        System.out.println("NO TAX");
+      }
+    }
+    else
+    {
+      System.out.println("NO TAX");
+    } 
+  }
+}

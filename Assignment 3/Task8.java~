@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Task8
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Give me the number of published article");
+    int n=sc.nextInt();
+    total fees=(500*n);
+    System.out.println("Total fees is = "+total fees);
+    sc.close();
+  }
+}

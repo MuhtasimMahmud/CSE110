@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Task9
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Please give me a number");
+    int num=sc.nextInt();
+    int max=num;
+    for(int i=1;i<3;i++)
+    {
+      System.out.println("Please give me another num");
+      int num2=sc.nextInt();
+      if(num2>max)
+      {
+        max=num2;
+      }
+    }
+    System.out.println("Largest number="+max);
+    sc.close();
+  }
+}

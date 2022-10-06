@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Task12
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Please give me a number");
+    int a=sc.nextInt();
+    System.out.println("Please give me a number");
+    int b=sc.nextInt();
+    System.out.println("Please give me a number");
+    int c=sc.nextInt();
+    System.out.println("Before exchanging a="+a);
+    System.out.println("Before exchanging b="+b);
+    System.out.println("Before exchanging c="+c);
+    int temp1=a;
+    int temp2=b;
+    a=c;
+    b=temp1;
+    c=temp2;
+    System.out.println("After exchanging a="+a);
+    System.out.println("After exchanging b="+b);
+    System.out.println("After exchanging c="+c);
+    sc.close();
+  }
+}

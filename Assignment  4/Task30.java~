@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Task30
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Please give me a number");
+    int n1=sc.nextInt();
+    System.out.println("Please give me a number");
+    int n2=sc.nextInt();
+    int counter2=0;
+    int counter3=0;
+    int sum=0;
+    for(int i=n1;i<=n2;i++)
+    {
+      int counter=0;
+      for(int j=1;j<=i;j++)
+      {
+        if(i%j==0)
+        {
+          counter++;
+          sum=sum+j;
+        }
+      }
+      int x=sum-i;
+      if(x==i)
+      {
+        counter3++;
+      }
+      if(counter==2)
+      {
+        counter2++;
+      }
+    }
+    System.out.println(counter2+" prime numbers");
+    System.out.println(counter3+" perfect numbers");
+  }
+}

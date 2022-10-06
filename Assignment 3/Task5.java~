@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Task5
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Please give me a number");
+    int num=sc.nextInt();
+    int temp=num;
+    int hours=num/60;
+    int minute=num%60;
+    int second=temp-((hours*3600)+(minute*60));
+  }
+}

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Task13
+{
+  public statioc void main(String[]args)
+  {
+    scanner sc=new Scanner(System.in);
+    System.out.println("Please give me a number");
+    int num=sc.nextInt();
+    int sum=0;
+    for(int i=1;i<=num;i++)
+    {
+      if(i%2!=0)
+      {
+        sum=sum+i;
+      }
+    }
+    System.out.println(sum);
+  }
+}
